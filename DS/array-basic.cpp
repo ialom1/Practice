@@ -13,10 +13,17 @@ int findElement(int ara[], int len, int key) {
     return -1;
 }
 
-int binarySearch(int ara[], int len, int key) {
+void printArray (int ara[], int len) {
+    printf("The Sorted array: \n{");
     for(int i=0; i<len; i++) {
-        cout << ara[i] << endl;
+        cout << ara[i] << ",";
     }
+    printf("} \n");
+}
+
+int binarySearch(int ara[], int len, int key) {
+    printArray(ara, len);
+
     int low = 0, high = len;
 
     while(high > low){
