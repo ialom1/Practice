@@ -1,4 +1,7 @@
-/home/ialom/CLionProjects/Practice/cmake-build-debug/CMakeFiles/edit_cache.dir
 /home/ialom/CLionProjects/Practice/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/ialom/CLionProjects/Practice/cmake-build-debug/CMakeFiles/DS-array-leaders.dir
+/home/ialom/CLionProjects/Practice/cmake-build-debug/CMakeFiles/DS-array-pair-sum.dir
 /home/ialom/CLionProjects/Practice/cmake-build-debug/CMakeFiles/DS-array-basic.dir
+/home/ialom/CLionProjects/Practice/cmake-build-debug/CMakeFiles/DS-array-reverse.dir
 /home/ialom/CLionProjects/Practice/cmake-build-debug/CMakeFiles/Main.dir
+/home/ialom/CLionProjects/Practice/cmake-build-debug/CMakeFiles/edit_cache.dir

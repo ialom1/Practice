@@ -56,17 +56,6 @@ CMAKE_BINARY_DIR = /home/ialom/CLionProjects/Practice/cmake-build-debug
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/home/ialom/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/191.7479.33/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
-.PHONY : edit_cache
-
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
-
-.PHONY : edit_cache/fast
-
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
@@ -77,6 +66,17 @@ rebuild_cache:
 rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
+
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	/home/ialom/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/191.7479.33/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+.PHONY : edit_cache
+
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
+
+.PHONY : edit_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -111,17 +111,30 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named Main
+# Target rules for targets named DS-array-leaders
 
 # Build rule for target.
-Main: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 Main
-.PHONY : Main
+DS-array-leaders: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 DS-array-leaders
+.PHONY : DS-array-leaders
 
 # fast build rule for target.
-Main/fast:
-	$(MAKE) -f CMakeFiles/Main.dir/build.make CMakeFiles/Main.dir/build
-.PHONY : Main/fast
+DS-array-leaders/fast:
+	$(MAKE) -f CMakeFiles/DS-array-leaders.dir/build.make CMakeFiles/DS-array-leaders.dir/build
+.PHONY : DS-array-leaders/fast
+
+#=============================================================================
+# Target rules for targets named DS-array-pair-sum
+
+# Build rule for target.
+DS-array-pair-sum: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 DS-array-pair-sum
+.PHONY : DS-array-pair-sum
+
+# fast build rule for target.
+DS-array-pair-sum/fast:
+	$(MAKE) -f CMakeFiles/DS-array-pair-sum.dir/build.make CMakeFiles/DS-array-pair-sum.dir/build
+.PHONY : DS-array-pair-sum/fast
 
 #=============================================================================
 # Target rules for targets named DS-array-basic
@@ -149,6 +162,19 @@ DS-array-reverse/fast:
 	$(MAKE) -f CMakeFiles/DS-array-reverse.dir/build.make CMakeFiles/DS-array-reverse.dir/build
 .PHONY : DS-array-reverse/fast
 
+#=============================================================================
+# Target rules for targets named Main
+
+# Build rule for target.
+Main: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Main
+.PHONY : Main
+
+# fast build rule for target.
+Main/fast:
+	$(MAKE) -f CMakeFiles/Main.dir/build.make CMakeFiles/Main.dir/build
+.PHONY : Main/fast
+
 DS/array-basic.o: DS/array-basic.cpp.o
 
 .PHONY : DS/array-basic.o
@@ -175,6 +201,60 @@ DS/array-basic.s: DS/array-basic.cpp.s
 DS/array-basic.cpp.s:
 	$(MAKE) -f CMakeFiles/DS-array-basic.dir/build.make CMakeFiles/DS-array-basic.dir/DS/array-basic.cpp.s
 .PHONY : DS/array-basic.cpp.s
+
+DS/array-leaders.o: DS/array-leaders.cpp.o
+
+.PHONY : DS/array-leaders.o
+
+# target to build an object file
+DS/array-leaders.cpp.o:
+	$(MAKE) -f CMakeFiles/DS-array-leaders.dir/build.make CMakeFiles/DS-array-leaders.dir/DS/array-leaders.cpp.o
+.PHONY : DS/array-leaders.cpp.o
+
+DS/array-leaders.i: DS/array-leaders.cpp.i
+
+.PHONY : DS/array-leaders.i
+
+# target to preprocess a source file
+DS/array-leaders.cpp.i:
+	$(MAKE) -f CMakeFiles/DS-array-leaders.dir/build.make CMakeFiles/DS-array-leaders.dir/DS/array-leaders.cpp.i
+.PHONY : DS/array-leaders.cpp.i
+
+DS/array-leaders.s: DS/array-leaders.cpp.s
+
+.PHONY : DS/array-leaders.s
+
+# target to generate assembly for a file
+DS/array-leaders.cpp.s:
+	$(MAKE) -f CMakeFiles/DS-array-leaders.dir/build.make CMakeFiles/DS-array-leaders.dir/DS/array-leaders.cpp.s
+.PHONY : DS/array-leaders.cpp.s
+
+DS/array-pair-sum.o: DS/array-pair-sum.cpp.o
+
+.PHONY : DS/array-pair-sum.o
+
+# target to build an object file
+DS/array-pair-sum.cpp.o:
+	$(MAKE) -f CMakeFiles/DS-array-pair-sum.dir/build.make CMakeFiles/DS-array-pair-sum.dir/DS/array-pair-sum.cpp.o
+.PHONY : DS/array-pair-sum.cpp.o
+
+DS/array-pair-sum.i: DS/array-pair-sum.cpp.i
+
+.PHONY : DS/array-pair-sum.i
+
+# target to preprocess a source file
+DS/array-pair-sum.cpp.i:
+	$(MAKE) -f CMakeFiles/DS-array-pair-sum.dir/build.make CMakeFiles/DS-array-pair-sum.dir/DS/array-pair-sum.cpp.i
+.PHONY : DS/array-pair-sum.cpp.i
+
+DS/array-pair-sum.s: DS/array-pair-sum.cpp.s
+
+.PHONY : DS/array-pair-sum.s
+
+# target to generate assembly for a file
+DS/array-pair-sum.cpp.s:
+	$(MAKE) -f CMakeFiles/DS-array-pair-sum.dir/build.make CMakeFiles/DS-array-pair-sum.dir/DS/array-pair-sum.cpp.s
+.PHONY : DS/array-pair-sum.cpp.s
 
 DS/array-reverse.o: DS/array-reverse.cpp.o
 
@@ -236,14 +316,22 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... edit_cache"
-	@echo "... Main"
 	@echo "... rebuild_cache"
+	@echo "... DS-array-leaders"
+	@echo "... DS-array-pair-sum"
 	@echo "... DS-array-basic"
 	@echo "... DS-array-reverse"
+	@echo "... Main"
+	@echo "... edit_cache"
 	@echo "... DS/array-basic.o"
 	@echo "... DS/array-basic.i"
 	@echo "... DS/array-basic.s"
+	@echo "... DS/array-leaders.o"
+	@echo "... DS/array-leaders.i"
+	@echo "... DS/array-leaders.s"
+	@echo "... DS/array-pair-sum.o"
+	@echo "... DS/array-pair-sum.i"
+	@echo "... DS/array-pair-sum.s"
 	@echo "... DS/array-reverse.o"
 	@echo "... DS/array-reverse.i"
 	@echo "... DS/array-reverse.s"

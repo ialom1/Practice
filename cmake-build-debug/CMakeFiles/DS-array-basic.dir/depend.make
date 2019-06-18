@@ -3,3 +3,5 @@
 
 CMakeFiles/DS-array-basic.dir/DS/array-basic.cpp.o: ../DS/array-basic.cpp
 
+CMakeFiles/DS-array-basic.dir/DS/array-reverse.cpp.o: ../DS/array-reverse.cpp
+

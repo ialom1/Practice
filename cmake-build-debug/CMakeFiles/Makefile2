@@ -65,39 +65,76 @@ CMAKE_SOURCE_DIR = /home/ialom/CLionProjects/Practice
 CMAKE_BINARY_DIR = /home/ialom/CLionProjects/Practice/cmake-build-debug
 
 #=============================================================================
-# Target rules for target CMakeFiles/Main.dir
+# Target rules for target CMakeFiles/DS-array-leaders.dir
 
 # All Build rule for target.
-CMakeFiles/Main.dir/all:
-	$(MAKE) -f CMakeFiles/Main.dir/build.make CMakeFiles/Main.dir/depend
-	$(MAKE) -f CMakeFiles/Main.dir/build.make CMakeFiles/Main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ialom/CLionProjects/Practice/cmake-build-debug/CMakeFiles --progress-num=5,6 "Built target Main"
-.PHONY : CMakeFiles/Main.dir/all
+CMakeFiles/DS-array-leaders.dir/all:
+	$(MAKE) -f CMakeFiles/DS-array-leaders.dir/build.make CMakeFiles/DS-array-leaders.dir/depend
+	$(MAKE) -f CMakeFiles/DS-array-leaders.dir/build.make CMakeFiles/DS-array-leaders.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ialom/CLionProjects/Practice/cmake-build-debug/CMakeFiles --progress-num=3,4 "Built target DS-array-leaders"
+.PHONY : CMakeFiles/DS-array-leaders.dir/all
 
 # Include target in all.
-all: CMakeFiles/Main.dir/all
+all: CMakeFiles/DS-array-leaders.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/Main.dir/rule: cmake_check_build_system
+CMakeFiles/DS-array-leaders.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ialom/CLionProjects/Practice/cmake-build-debug/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/Main.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/DS-array-leaders.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ialom/CLionProjects/Practice/cmake-build-debug/CMakeFiles 0
-.PHONY : CMakeFiles/Main.dir/rule
+.PHONY : CMakeFiles/DS-array-leaders.dir/rule
 
 # Convenience name for target.
-Main: CMakeFiles/Main.dir/rule
+DS-array-leaders: CMakeFiles/DS-array-leaders.dir/rule
 
-.PHONY : Main
-
-# clean rule for target.
-CMakeFiles/Main.dir/clean:
-	$(MAKE) -f CMakeFiles/Main.dir/build.make CMakeFiles/Main.dir/clean
-.PHONY : CMakeFiles/Main.dir/clean
+.PHONY : DS-array-leaders
 
 # clean rule for target.
-clean: CMakeFiles/Main.dir/clean
+CMakeFiles/DS-array-leaders.dir/clean:
+	$(MAKE) -f CMakeFiles/DS-array-leaders.dir/build.make CMakeFiles/DS-array-leaders.dir/clean
+.PHONY : CMakeFiles/DS-array-leaders.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/DS-array-leaders.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/DS-array-pair-sum.dir
+
+# All Build rule for target.
+CMakeFiles/DS-array-pair-sum.dir/all:
+	$(MAKE) -f CMakeFiles/DS-array-pair-sum.dir/build.make CMakeFiles/DS-array-pair-sum.dir/depend
+	$(MAKE) -f CMakeFiles/DS-array-pair-sum.dir/build.make CMakeFiles/DS-array-pair-sum.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ialom/CLionProjects/Practice/cmake-build-debug/CMakeFiles --progress-num=5,6 "Built target DS-array-pair-sum"
+.PHONY : CMakeFiles/DS-array-pair-sum.dir/all
+
+# Include target in all.
+all: CMakeFiles/DS-array-pair-sum.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/DS-array-pair-sum.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ialom/CLionProjects/Practice/cmake-build-debug/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/DS-array-pair-sum.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ialom/CLionProjects/Practice/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/DS-array-pair-sum.dir/rule
+
+# Convenience name for target.
+DS-array-pair-sum: CMakeFiles/DS-array-pair-sum.dir/rule
+
+.PHONY : DS-array-pair-sum
+
+# clean rule for target.
+CMakeFiles/DS-array-pair-sum.dir/clean:
+	$(MAKE) -f CMakeFiles/DS-array-pair-sum.dir/build.make CMakeFiles/DS-array-pair-sum.dir/clean
+.PHONY : CMakeFiles/DS-array-pair-sum.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/DS-array-pair-sum.dir/clean
 
 .PHONY : clean
 
@@ -145,7 +182,7 @@ clean: CMakeFiles/DS-array-basic.dir/clean
 CMakeFiles/DS-array-reverse.dir/all:
 	$(MAKE) -f CMakeFiles/DS-array-reverse.dir/build.make CMakeFiles/DS-array-reverse.dir/depend
 	$(MAKE) -f CMakeFiles/DS-array-reverse.dir/build.make CMakeFiles/DS-array-reverse.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ialom/CLionProjects/Practice/cmake-build-debug/CMakeFiles --progress-num=3,4 "Built target DS-array-reverse"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ialom/CLionProjects/Practice/cmake-build-debug/CMakeFiles --progress-num=7,8 "Built target DS-array-reverse"
 .PHONY : CMakeFiles/DS-array-reverse.dir/all
 
 # Include target in all.
@@ -172,6 +209,43 @@ CMakeFiles/DS-array-reverse.dir/clean:
 
 # clean rule for target.
 clean: CMakeFiles/DS-array-reverse.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/Main.dir
+
+# All Build rule for target.
+CMakeFiles/Main.dir/all:
+	$(MAKE) -f CMakeFiles/Main.dir/build.make CMakeFiles/Main.dir/depend
+	$(MAKE) -f CMakeFiles/Main.dir/build.make CMakeFiles/Main.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ialom/CLionProjects/Practice/cmake-build-debug/CMakeFiles --progress-num=9,10 "Built target Main"
+.PHONY : CMakeFiles/Main.dir/all
+
+# Include target in all.
+all: CMakeFiles/Main.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/Main.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ialom/CLionProjects/Practice/cmake-build-debug/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/Main.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ialom/CLionProjects/Practice/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/Main.dir/rule
+
+# Convenience name for target.
+Main: CMakeFiles/Main.dir/rule
+
+.PHONY : Main
+
+# clean rule for target.
+CMakeFiles/Main.dir/clean:
+	$(MAKE) -f CMakeFiles/Main.dir/build.make CMakeFiles/Main.dir/clean
+.PHONY : CMakeFiles/Main.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/Main.dir/clean
 
 .PHONY : clean
 
