@@ -6,13 +6,6 @@
 
 using namespace std;
 
-int findElement(int ara[], int len, int key) {
-    for(int i=0; i<len; i++){
-        if(ara[i] == key) return i;
-    }
-    return -1;
-}
-
 void printArray (int ara[], int len) {
     printf("The Sorted array: \n{");
     for(int i=0; i<len; i++) {
@@ -21,11 +14,17 @@ void printArray (int ara[], int len) {
     printf("} \n");
 }
 
+int findElement(int ara[], int len, int key) {
+    printArray(ara, len);
+    for(int i=0; i<len; i++){
+        if(ara[i] == key) return i;
+    }
+    return -1;
+}
+
 int binarySearch(int ara[], int len, int key) {
     printArray(ara, len);
-
     int low = 0, high = len;
-
     while(high > low){
         int mid = (low + high)/2;
         if(ara[mid] == key) {
@@ -43,7 +42,6 @@ int findSorted(int ara[], int len, int key) {
 }
 
 int main() {
-
     int ara[] = {10, 5, 15, 2, 99, 75, 64};
     int len = sizeof(ara)/ sizeof(ara[0]);
     int n = 99;
