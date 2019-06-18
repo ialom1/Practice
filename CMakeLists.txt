@@ -4,4 +4,5 @@ project(Practice)
 set(CMAKE_CXX_STANDARD 14)
 
 add_executable(DS-array-basic DS/array-basic.cpp)
+add_executable(DS-array-reverse DS/array-reverse.cpp)
 add_executable(Main main.cpp)

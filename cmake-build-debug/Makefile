@@ -111,6 +111,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named Main
+
+# Build rule for target.
+Main: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Main
+.PHONY : Main
+
+# fast build rule for target.
+Main/fast:
+	$(MAKE) -f CMakeFiles/Main.dir/build.make CMakeFiles/Main.dir/build
+.PHONY : Main/fast
+
+#=============================================================================
 # Target rules for targets named DS-array-basic
 
 # Build rule for target.
@@ -124,17 +137,17 @@ DS-array-basic/fast:
 .PHONY : DS-array-basic/fast
 
 #=============================================================================
-# Target rules for targets named Main
+# Target rules for targets named DS-array-reverse
 
 # Build rule for target.
-Main: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 Main
-.PHONY : Main
+DS-array-reverse: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 DS-array-reverse
+.PHONY : DS-array-reverse
 
 # fast build rule for target.
-Main/fast:
-	$(MAKE) -f CMakeFiles/Main.dir/build.make CMakeFiles/Main.dir/build
-.PHONY : Main/fast
+DS-array-reverse/fast:
+	$(MAKE) -f CMakeFiles/DS-array-reverse.dir/build.make CMakeFiles/DS-array-reverse.dir/build
+.PHONY : DS-array-reverse/fast
 
 DS/array-basic.o: DS/array-basic.cpp.o
 
@@ -162,6 +175,33 @@ DS/array-basic.s: DS/array-basic.cpp.s
 DS/array-basic.cpp.s:
 	$(MAKE) -f CMakeFiles/DS-array-basic.dir/build.make CMakeFiles/DS-array-basic.dir/DS/array-basic.cpp.s
 .PHONY : DS/array-basic.cpp.s
+
+DS/array-reverse.o: DS/array-reverse.cpp.o
+
+.PHONY : DS/array-reverse.o
+
+# target to build an object file
+DS/array-reverse.cpp.o:
+	$(MAKE) -f CMakeFiles/DS-array-reverse.dir/build.make CMakeFiles/DS-array-reverse.dir/DS/array-reverse.cpp.o
+.PHONY : DS/array-reverse.cpp.o
+
+DS/array-reverse.i: DS/array-reverse.cpp.i
+
+.PHONY : DS/array-reverse.i
+
+# target to preprocess a source file
+DS/array-reverse.cpp.i:
+	$(MAKE) -f CMakeFiles/DS-array-reverse.dir/build.make CMakeFiles/DS-array-reverse.dir/DS/array-reverse.cpp.i
+.PHONY : DS/array-reverse.cpp.i
+
+DS/array-reverse.s: DS/array-reverse.cpp.s
+
+.PHONY : DS/array-reverse.s
+
+# target to generate assembly for a file
+DS/array-reverse.cpp.s:
+	$(MAKE) -f CMakeFiles/DS-array-reverse.dir/build.make CMakeFiles/DS-array-reverse.dir/DS/array-reverse.cpp.s
+.PHONY : DS/array-reverse.cpp.s
 
 main.o: main.cpp.o
 
@@ -197,12 +237,16 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... edit_cache"
+	@echo "... Main"
 	@echo "... rebuild_cache"
 	@echo "... DS-array-basic"
-	@echo "... Main"
+	@echo "... DS-array-reverse"
 	@echo "... DS/array-basic.o"
 	@echo "... DS/array-basic.i"
 	@echo "... DS/array-basic.s"
+	@echo "... DS/array-reverse.o"
+	@echo "... DS/array-reverse.i"
+	@echo "... DS/array-reverse.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
