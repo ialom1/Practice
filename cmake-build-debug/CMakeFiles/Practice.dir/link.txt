@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/Practice.dir/DS/array-basic.cpp.o  -o Practice 

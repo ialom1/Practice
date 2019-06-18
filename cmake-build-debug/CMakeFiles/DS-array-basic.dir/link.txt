@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/DS-array-basic.dir/DS/array-basic.cpp.o  -o DS-array-basic 
