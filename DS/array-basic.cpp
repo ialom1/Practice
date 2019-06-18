@@ -7,7 +7,7 @@
 using namespace std;
 
 void printArray (int ara[], int len) {
-    printf("The Sorted array: \n{");
+    printf("The array: \n{");
     for(int i=0; i<len; i++) {
         cout << ara[i] << ",";
     }
@@ -17,6 +17,7 @@ void printArray (int ara[], int len) {
 int findElement(int ara[], int len, int key) {
     printArray(ara, len);
     for(int i=0; i<len; i++){
+        printf("i: %d - num: %d \n", i, ara[i]);
         if(ara[i] == key) return i;
     }
     return -1;
@@ -27,6 +28,7 @@ int binarySearch(int ara[], int len, int key) {
     int low = 0, high = len;
     while(high > low){
         int mid = (low + high)/2;
+        printf("Low: %d - Mid: %d - High: %d \n", ara[low], ara[mid], ara[high]);
         if(ara[mid] == key) {
             return mid;
         }
